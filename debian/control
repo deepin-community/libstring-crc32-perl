@@ -1,0 +1,28 @@
+Source: libstring-crc32-perl
+Maintainer: Debian Perl Group <pkg-perl-maintainers@lists.alioth.debian.org>
+Uploaders: Damyan Ivanov <dmn@debian.org>
+Section: perl
+Testsuite: autopkgtest-pkg-perl
+Priority: optional
+Build-Depends: debhelper-compat (= 13),
+               perl-xs-dev,
+               perl:native
+Standards-Version: 4.6.0
+Vcs-Browser: https://salsa.debian.org/perl-team/modules/packages/libstring-crc32-perl
+Vcs-Git: https://salsa.debian.org/perl-team/modules/packages/libstring-crc32-perl.git
+Homepage: https://metacpan.org/release/String-CRC32
+Rules-Requires-Root: no
+
+Package: libstring-crc32-perl
+Architecture: any
+Multi-Arch: same
+Depends: ${misc:Depends},
+         ${perl:Depends},
+         ${shlibs:Depends}
+Description: Perl interface for cyclic redundancy check generation
+ The String::CRC32 module calculates CRC sums of 32 bit lengths.
+ It generates the same CRC values as ZMODEM, PKZIP, PICCHECK and
+ many others.
+ .
+ Despite its name, this module is able to compute the checksum of
+ strings as well as of files.

@@ -1,0 +1,41 @@
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Source: https://metacpan.org/release/String-CRC32
+Upstream-Contact: Lee Johnson <leejo@cpan.org>
+Upstream-Name: String-CRC32
+
+Files: *
+Copyright: Public Domain
+Author: Soenke J. Peters <peters__perl@opcenter.de>
+License: public-domain
+ The author of this package disclaims all copyrights and
+ releases it into the public domain.
+Comment:
+ CRC algorithm code taken from CRC-32 by Craig Bruce.
+ The module stuff is inspired by a similar perl module called
+ String::CRC by David Sharnoff & Matthew Dillon.
+ Horst Fickenscher told me that it could be useful to supply an init
+ value to the crc checking function and so I included this possibility.
+
+Files: debian/*
+Copyright: 2002, 2004, 2005, 2006, Clint Adams <schizo@debian.org>
+ 2006, Gunnar Wolf <gwolf@debian.org>
+ 2006, Krzysztof Krzyzaniak (eloy) <eloy@debian.org>
+ 2008, Damyan Ivanov <dmn@debian.org>
+ 2014-2021, gregor herrmann <gregoa@debian.org>
+License: Artistic or GPL-1+
+
+License: Artistic
+ This program is free software; you can redistribute it and/or modify
+ it under the terms of the Artistic License, which comes with Perl.
+ .
+ On Debian systems, the complete text of the Artistic License can be
+ found in `/usr/share/common-licenses/Artistic'.
+
+License: GPL-1+
+ This program is free software; you can redistribute it and/or modify
+ it under the terms of the GNU General Public License as published by
+ the Free Software Foundation; either version 1, or (at your option)
+ any later version.
+ .
+ On Debian systems, the complete text of version 1 of the GNU General
+ Public License can be found in `/usr/share/common-licenses/GPL-1'.

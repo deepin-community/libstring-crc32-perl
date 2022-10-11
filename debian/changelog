@@ -1,0 +1,205 @@
+libstring-crc32-perl (2.100-1) UNRELEASED; urgency=medium
+
+  * update
+
+ -- Debian Perl Group <pkg-perl-maintainers@lists.alioth.debian.org>  Mon, 16 May 2022 20:20:42 +0800
+
+libstring-crc32-perl (2.100-1) unstable; urgency=medium
+
+  * Team upload.
+  * Import upstream version 2.100.
+  * Update years of packaging copyright.
+  * Declare compliance with Debian Policy 4.6.0.
+
+ -- gregor herrmann <gregoa@debian.org>  Thu, 30 Sep 2021 17:16:27 +0200
+
+libstring-crc32-perl (2-1) unstable; urgency=medium
+
+  * Team upload.
+
+  [ Debian Janitor ]
+  * Set upstream metadata fields: Bug-Submit, Repository, Repository-
+    Browse.
+  * Update standards version to 4.5.0, no changes needed.
+  * Apply multi-arch hints.
+
+  [ gregor herrmann ]
+  * Import upstream version 2.
+  * Update years of packaging copyright.
+  * Declare compliance with Debian Policy 4.5.1.
+  * Set Rules-Requires-Root: no.
+  * Bump debhelper-compat to 13.
+
+ -- gregor herrmann <gregoa@debian.org>  Fri, 20 Nov 2020 22:49:12 +0100
+
+libstring-crc32-perl (1.8-1) unstable; urgency=medium
+
+  * Team upload.
+  * Import upstream version 1.8.
+  * Update years of packaging copyright.
+  * Update Build-Depends for cross builds.
+  * Declare compliance with Debian Policy 4.4.1.
+  * Bump debhelper-compat to 12.
+  * debian/watch: use uscan version 4.
+  * Remove obsolete fields Name, Contact from debian/upstream/metadata.
+
+ -- gregor herrmann <gregoa@debian.org>  Sat, 23 Nov 2019 19:15:50 +0100
+
+libstring-crc32-perl (1.7-1) unstable; urgency=medium
+
+  * Team upload.
+
+  [ Salvatore Bonaccorso ]
+  * Update Vcs-* headers for switch to salsa.debian.org
+
+  [ gregor herrmann ]
+  * Add debian/upstream/metadata.
+  * Import upstream version 1.7.
+  * Update years of packaging copyright.
+  * Declare compliance with Debian Policy 4.1.5.
+  * Bump debhelper compatibility level to 10.
+
+ -- gregor herrmann <gregoa@debian.org>  Fri, 27 Jul 2018 21:01:03 +0200
+
+libstring-crc32-perl (1.6-1) unstable; urgency=medium
+
+  * Team upload.
+
+  [ gregor herrmann ]
+  * Strip trailing slash from metacpan URLs.
+
+  [ Salvatore Bonaccorso ]
+  * Update Vcs-Browser URL to cgit web frontend
+  * debian/control: Use HTTPS transport protocol for Vcs-Git URI
+
+  [ gregor herrmann ]
+  * debian/copyright: change Copyright-Format 1.0 URL to HTTPS.
+
+  [ Alex Muntada ]
+  * Remove inactive pkg-perl members from Uploaders.
+
+  [ Salvatore Bonaccorso ]
+  * Import upstream version 1.6
+  * Declare package as autopkgtestable
+  * debian/rules: Build enabling all hardening flags
+  * Mention module name in long description
+  * Declare compliance with Debian policy 4.1.1
+
+ -- Salvatore Bonaccorso <carnil@debian.org>  Sun, 12 Nov 2017 16:35:48 +0100
+
+libstring-crc32-perl (1.5-1) unstable; urgency=low
+
+  * Team upload.
+
+  [ gregor herrmann ]
+  * debian/control: Added: ${misc:Depends} to Depends: field.
+  * Set Standards-Version to 3.9.1; remove version from perl build dependency.
+
+  [ Ansgar Burchardt ]
+  * debian/control: Convert Vcs-* fields to Git.
+
+  [ Salvatore Bonaccorso ]
+  * Change search.cpan.org based URIs to metacpan.org based URIs
+
+  [ gregor herrmann ]
+  * New upstream release.
+  * Switch to "3.0 (quilt)" source format.
+  * Use dh(1) and debhelper 9.20120312.
+  * debian/copyright: switch formatting to Copyright-Format 1.0.
+  * Declare compliance with Debian Policy 3.9.5.
+
+ -- gregor herrmann <gregoa@debian.org>  Fri, 10 Jan 2014 22:28:29 +0100
+
+libstring-crc32-perl (1.4-2) unstable; urgency=low
+
+  [ Frank Lichtenheld ]
+  * Fix typo in Description
+
+  [ gregor herrmann ]
+  * debian/control: Added: Vcs-Svn field (source stanza); Vcs-Browser
+    field (source stanza); Homepage field (source stanza). Removed: XS-
+    Vcs-Svn fields.
+  * debian/watch: remove dash from the version capture.
+  * debian/rules: delete /usr/share/perl5 only if it exists.
+
+  [ Damyan Ivanov ]
+  * debian/rules: clean-up
+    + use "$@" when touching stamps
+    + remove unneeded (commented) dh_installman
+    + remove unused dh_installexamples and dh_makeshlibs
+    + make install target depend on install-stamp and that -- on build-stamp
+    + move test suite from install to build target
+    + clean: remove stamps before realclean
+  * Standards-Version: 3.7.3 (no changes)
+  * debhelper compatibility level 6
+  * add myself to Uploaders
+  * debian/copyright: use author-independent upstream URL
+  * debian/watch: use dist-based URL, better pattern
+
+ -- Damyan Ivanov <dmn@debian.org>  Thu, 24 Jan 2008 13:20:14 +0200
+
+libstring-crc32-perl (1.4-1) unstable; urgency=low
+
+  * New upstream release
+  * debian/control:
+   - Standards-Version: increased to 3.7.2 without additional changes
+   - Uploaders: added me
+  * debian/rules:
+   - cleaning
+   - test suite added
+
+ -- Krzysztof Krzyzaniak (eloy) <eloy@debian.org>  Sat,  6 May 2006 13:07:41 +0200
+
+libstring-crc32-perl (1.3-3) unstable; urgency=low
+
+  * Adopted by the Debian pkg-perl group (Closes: #348954)
+  * Moved from section interpreters to perl
+  * Rewrote debian/rules using debhelper
+
+ -- Gunnar Wolf <gwolf@debian.org>  Sat,  8 Apr 2006 08:02:16 -0500
+
+libstring-crc32-perl (1.3-2) unstable; urgency=low
+
+  * Bump Standards-Version to 3.6.2.
+  * Orphan package by setting maintainer to QA group.
+
+ -- Clint Adams <schizo@debian.org>  Sat, 21 Jan 2006 18:22:46 -0500
+
+libstring-crc32-perl (1.3-1) unstable; urgency=low
+
+  * New upstream release.
+  * Drop build-dep on debhelper.
+
+ -- Clint Adams <schizo@debian.org>  Sat, 30 Apr 2005 13:52:33 -0400
+
+libstring-crc32-perl (1.2-5) unstable; urgency=low
+
+  * Change watch URL from ftp to http, since some CPAN ftp servers
+    seem a little off.
+
+ -- Clint Adams <schizo@debian.org>  Wed, 14 Jul 2004 15:11:14 -0400
+
+libstring-crc32-perl (1.2-4) unstable; urgency=low
+
+  * Add debian/watch file for dehs.
+  * Bump Standards-Version to 3.6.1.
+
+ -- Clint Adams <schizo@debian.org>  Tue, 13 Jul 2004 11:03:52 -0400
+
+libstring-crc32-perl (1.2-3) unstable; urgency=low
+
+  * Fix typo in description.  closes: #166537.
+
+ -- Clint Adams <schizo@debian.org>  Sun, 27 Oct 2002 15:19:27 -0500
+
+libstring-crc32-perl (1.2-2) unstable; urgency=low
+
+  * Build-dep on perl 5.8.
+
+ -- Clint Adams <schizo@debian.org>  Sat, 24 Aug 2002 21:02:08 -0400
+
+libstring-crc32-perl (1.2-1) unstable; urgency=low
+
+  * Initial Release.
+
+ -- Clint Adams <schizo@debian.org>  Sun,  9 Jun 2002 15:02:24 -0400
